@@ -44,7 +44,7 @@ app.get("/cards/:category_id", (req, res) => {
         res.render("category", {
             title: category.name,
             category,
-        })
+        });
     } else {
         res.sendStatus(404);
     }
